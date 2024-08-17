@@ -1,0 +1,122 @@
+
+
+.layout {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #e6f4f1;
+}
+
+.header {
+    width: 100%;
+    background-color: #f7f9fa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px40px;
+    box-shadow: 02px4pxrgba(0, 0, 0, 0.1);
+}
+
+.logoSection {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 50px;
+    height: 50px;
+    background-color: #ea5c47;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+
+
+.logoutButton {
+    background-color: #3b9add;
+    color: white;
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    position: absolute;
+    top: 15px;
+    right: 40px;
+
+    &:hover {
+        background-color: #307ac7;
+    }
+}
+
+.mainContent {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0010pxrgba(0, 0, 0, 0.1);
+    width: 380px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.inputField {
+    margin: 20px0;
+    text-align: left;
+
+    label {
+        display: block;
+        margin-bottom: 5px;
+        color: #4b8a5f;
+        font-weight: bold;
+        font-size: 14px;
+    }
+
+    input {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        box-shadow: inset 01px3pxrgba(0, 0, 0, 0.1);
+        font-size: 16px;
+    }
+}
+
+.button {
+    background-color: #0070f3;
+    color: white;
+    padding: 15px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    margin-top: 50px;
+    margin-right: 10px;
+    /* Añadir un margen derecho */
+
+    &:hover {
+        background-color: #005bb5;
+    }
+}
+
+.button:last-child {
+    margin-right: 0;
+    /* Eliminar el margen derecho del último botón */
+}
+
+.arrow {
+    color: #0070f3;
+    font-size: 20px;
+    margin-right: 10px;
+    background-color: #fff;
+    
+}
