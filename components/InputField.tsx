@@ -17,6 +17,7 @@ const InputField = ({
   value,
   onChange,
 }: InputFieldProps) => {
+  
   return (
     <div className={styles.inputField}>
       <label>{label}</label>
