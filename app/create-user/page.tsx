@@ -5,6 +5,7 @@ import Layout from "../../components/Layout";
 import InputField from "../../components/InputField";
 import Button from "../../components/Button";
 import { gql, useMutation } from "@apollo/client";
+import 'dotenv/config'
 
 const CREATE_USER_MUTATION = gql`
   mutation CreateUser($createUserInput: CreateUserInput!) {
@@ -22,6 +23,7 @@ const CreateUser = () => {
   const [lastname, setLastname] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  console.log("ENVBACKEND",process.env.BACKEND_API)
 
   const [createUser, { data, loading, error }] =
     useMutation(CREATE_USER_MUTATION);

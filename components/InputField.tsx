@@ -1,6 +1,7 @@
 "use client";
 import React from "react";
 import styles from "./components.module.scss";
+import 'dotenv/config'
 
 interface InputFieldProps {
   label: string;
@@ -18,6 +19,7 @@ const InputField = ({
   onChange,
 }: InputFieldProps) => {
   
+  console.log("ENVBACKEND",process.env.BACKEND_API)
   return (
     <div className={styles.inputField}>
       <label>{label}</label>
